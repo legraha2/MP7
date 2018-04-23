@@ -1,11 +1,14 @@
 package edu.illinois.cs.cs125.mp7;
 
 
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -25,6 +28,15 @@ public class MainActivity extends AppCompatActivity {
 
         initImageBitmaps();
 
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "New Recipe", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+
     }
 
     private void initImageBitmaps() {
@@ -37,7 +49,9 @@ public class MainActivity extends AppCompatActivity {
         mNames.add("Pancakes");
 
 
+
         initRecyclerView();
+
     }
 
     private void initRecyclerView(){
@@ -46,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(this, mNames, mImageUrls);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+
 
     }
 }
