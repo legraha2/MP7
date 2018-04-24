@@ -48,7 +48,20 @@ public class MainActivity extends AppCompatActivity {
         mImageUrls.add("https://connectnigeria.com/articles/wp-content/uploads/2018/03/pancakes-2801960_1280-1000x600.jpg");
         mNames.add("Pancakes");
 
+        mImageUrls.add("https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2017/03/hedgehog-bread-roll.jpg?itok=xmDj8xMR");
+        mNames.add("Hedgehog Rolls");
 
+        mImageUrls.add("http://www.americangarden.us/wp-content/uploads/2017/05/Recipe_Homemade-pizza_AG-1.jpg");
+        mNames.add("Pizza");
+
+        mImageUrls.add("https://www.lanascooking.com/wp-content/uploads/2010/10/pumpkinbread_final_450.jpg");
+        mNames.add("Pumpkin Bread");
+
+        mImageUrls.add("https://www.cookingclassy.com/wp-content/uploads/2016/01/mexican_vegetable_soup5..jpg");
+        mNames.add("Veggie Soup");
+
+        mImageUrls.add("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sour-cream-chocolate-chip-scones-1520272016.jpg");
+        mNames.add("Chocolate Chip Scones");
 
         initRecyclerView();
 
